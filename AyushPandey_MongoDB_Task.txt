@@ -1,0 +1,175 @@
+> use MOVIES();
+switched to db MOVIES()
+> db.movie.insertOne({"title":"3 Idiots","director":"Rajkumar Hirani","year":2009,"time":150,"genre":["Comedy","Drama","Romance"],"artists":[{"name":"Aamir Khan","Skills":["Experience","Acting","Voice"],"role":["Friend","Teacher","Lover"]}],"users":[{"Name":"Ayush","email":"ayush@gmail.com","review":"Awesome Movie"},{"Name":"Priyanshu","email":"priyanshu@gmail.com","review":"Nice Movie"}],"media":[{"video":"VIDEO1"},{"video":"VIDEO2"},{"image":"IMAGE1"},{"image":"IMAGE2"}]});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6138e3f06c573005140c68d7")
+}
+> db.movie.insertOne({"title":"Chhichhore","director":"Nitesh Tiwari","year":2019,"time":143,"genre":["Comedy","Romance","Drama"],"artists":[{"name":"Sushant Singh","Skills":["Acting","Creative","Dance"],"role":["Friend","Father","Lover"]}],"users":[{"Name":"Ayush","email":"ayush@gmail.com","review":"Blockbuster"},{"Name":"Gaurav","email":"gaurav@gmail.com","review":"Worth watch"}],"media":[{"video":"VIDEO3"},{"video":"VIDEO4"},{"image":"IMAGE3"},{"image":"IMAGE4"}]});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6138e3fa6c573005140c68d8")
+}
+> db.movie.insertOne({"title":"Mumbai Saga","director":"Sanjay Gupta","year":2021,"time":135,"genre":["Action","Crime"],"artists":[{"name":"John Abraham","Skills":["Acting","Voice","Attitude"],"role":["Criminal","Leader"]}],"users":[{"Name":"Harsh","email":"harsh@gmail.com","review":"Master piece"},{"Name":"Aman","email":"aman@gmail.com","review":"Amazing movie"}],"media":[{"video":"VIDEO4"},{"video":"VIDEO6"},{"image":"IMAGE5"},{"image":"IMAGE6"}]});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6138e44e6c573005140c68d9")
+}
+> db.movie.find().pretty();
+{
+        "_id" : ObjectId("6138e3f06c573005140c68d7"),
+        "title" : "3 Idiots",
+        "director" : "Rajkumar Hirani",
+        "year" : 2009,
+        "time" : 150,
+        "genre" : [
+                "Comedy",
+                "Drama",
+                "Romance"
+        ],
+        "artists" : [
+                {
+                        "name" : "Aamir Khan",
+                        "Skills" : [
+                                "Experience",
+                                "Acting",
+                                "Voice"
+                        ],
+                        "role" : [
+                                "Friend",
+                                "Teacher",
+                                "Lover"
+                        ]
+                }
+        ],
+        "users" : [
+                {
+                        "Name" : "Ayush",
+                        "email" : "ayush@gmail.com",
+                        "review" : "Awesome Movie"
+                },
+                {
+                        "Name" : "Priyanshu",
+                        "email" : "priyanshu@gmail.com",
+                        "review" : "Nice Movie"
+                }
+        ],
+        "media" : [
+                {
+                        "video" : "VIDEO1"
+                },
+                {
+                        "video" : "VIDEO2"
+                },
+                {
+                        "image" : "IMAGE1"
+                },
+                {
+                        "image" : "IMAGE2"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("6138e3fa6c573005140c68d8"),
+        "title" : "Chhichhore",
+        "director" : "Nitesh Tiwari",
+        "year" : 2019,
+        "time" : 143,
+        "genre" : [
+                "Comedy",
+                "Romance",
+                "Drama"
+        ],
+        "artists" : [
+                {
+                        "name" : "Sushant Singh",
+                        "Skills" : [
+                                "Acting",
+                                "Creative",
+                                "Dance"
+                        ],
+                        "role" : [
+                                "Friend",
+                                "Father",
+                                "Lover"
+                        ]
+                }
+        ],
+        "users" : [
+                {
+                        "Name" : "Ayush",
+                        "email" : "ayush@gmail.com",
+                        "review" : "Blockbuster"
+                },
+                {
+                        "Name" : "Gaurav",
+                        "email" : "gaurav@gmail.com",
+                        "review" : "Worth watch"
+                }
+        ],
+        "media" : [
+                {
+                        "video" : "VIDEO3"
+                },
+                {
+                        "video" : "VIDEO4"
+                },
+                {
+                        "image" : "IMAGE3"
+                },
+                {
+                        "image" : "IMAGE4"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("6138e44e6c573005140c68d9"),
+        "title" : "Mumbai Saga",
+        "director" : "Sanjay Gupta",
+        "year" : 2021,
+        "time" : 135,
+        "genre" : [
+                "Action",
+                "Crime"
+        ],
+        "artists" : [
+                {
+                        "name" : "John Abraham",
+                        "Skills" : [
+                                "Acting",
+                                "Voice",
+                                "Attitude"
+                        ],
+                        "role" : [
+                                "Criminal",
+                                "Leader"
+                        ]
+                }
+        ],
+        "users" : [
+                {
+                        "Name" : "Harsh",
+                        "email" : "harsh@gmail.com",
+                        "review" : "Master piece"
+                },
+                {
+                        "Name" : "Aman",
+                        "email" : "aman@gmail.com",
+                        "review" : "Amazing movie"
+                }
+        ],
+        "media" : [
+                {
+                        "video" : "VIDEO4"
+                },
+                {
+                        "video" : "VIDEO6"
+                },
+                {
+                        "image" : "IMAGE5"
+                },
+                {
+                        "image" : "IMAGE6"
+                }
+        ]
+}
